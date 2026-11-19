@@ -1,0 +1,10 @@
+{
+  "lib": "deepmerge",
+  "class": "Merger",
+  "n": 1000000,
+  "rss_before_kb": 13568,
+  "rss_after_kb": 461056,
+  "delta_mb": 437.0,
+  "live": 1000000,
+  "has_dict": true
+}

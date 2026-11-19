@@ -1,0 +1,10 @@
+{
+  "lib": "deepmerge",
+  "class": "StrategyList",
+  "n": 1000000,
+  "rss_before_kb": 13568,
+  "rss_after_kb": 162816,
+  "delta_mb": 145.75,
+  "live": 1000000,
+  "has_dict": true
+}

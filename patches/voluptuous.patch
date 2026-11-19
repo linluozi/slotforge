@@ -1,0 +1,96 @@
+--- a/schema_builder.py
++++ b/schema_builder.py
+@@ -106,6 +106,14 @@
+             >>> assert v != v2
+ 
+     """
++    __slots__ = ('_compiled', 'extra', 'required', 'schema',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     _extra_to_name = {
+         REMOVE_EXTRA: 'REMOVE_EXTRA',
+@@ -989,6 +997,14 @@
+     ... except er.MultipleInvalid as e:
+     ...   assert isinstance(e.errors[0], er.RangeInvalid)
+     """
++    __slots__ = ('_schema', 'cls', 'msg', 'schema',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+--- a/util.py
++++ b/util.py
+@@ -73,6 +73,14 @@
+     >>> s(None)
+     []
+     """
++    __slots__ = ('default_value', 'msg',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(self, default_value, msg: typing.Optional[str] = None) -> None:
+         self.default_value = default_factory(default_value)
+--- a/validators.py
++++ b/validators.py
+@@ -131,6 +131,14 @@
+         >>> with raises(MultipleInvalid, 'moo'):
+         ...   validate('foo')
+     """
++    __slots__ = ('msg', 'type', 'type_name',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+@@ -460,6 +468,14 @@
+     >>> validate('you say hello')
+     'I say goodbye'
+     """
++    __slots__ = ('msg', 'pattern', 'substitution',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+@@ -653,6 +669,14 @@
+     >>> with raises(MultipleInvalid, 'value must be lower than 10'):
+     ...   Schema(Range(max=10, max_included=False))(20)
+     """
++    __slots__ = ('max', 'max_included', 'min', 'min_included', 'msg',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,

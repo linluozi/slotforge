@@ -1,0 +1,1059 @@
+{
+  "python": "3.12.3",
+  "libs": {
+    "deepmerge": {
+      "scales": {
+        "10000": {
+          "Merger": {
+            "module": "deepmerge.merger",
+            "class": "Merger",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 3691232,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 369.1232
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1092.9463244974613,
+                1095.5359600484371,
+                1089.9284109473228,
+                1097.0479995012283,
+                1089.9324342608452
+              ],
+              "median_ns": 1092.9463244974613,
+              "p25": 1089.930422604084,
+              "p75": 1096.2919797748327
+            }
+          },
+          "StrategyList": {
+            "module": "deepmerge.strategy.core",
+            "class": "StrategyList",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 965280,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 96.528
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                577.7288787066936,
+                570.7784183323383,
+                580.8741971850395,
+                604.6400777995586,
+                648.9980407059193
+              ],
+              "median_ns": 580.8741971850395,
+              "p25": 574.253648519516,
+              "p75": 626.819059252739
+            }
+          }
+        },
+        "100000": {
+          "Merger": {
+            "module": "deepmerge.merger",
+            "class": "Merger",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 36807040,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 368.0704
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1114.101056009531,
+                1059.1353476047516,
+                1065.2712732553482,
+                1068.2360641658306,
+                1074.1008818149567
+              ],
+              "median_ns": 1068.2360641658306,
+              "p25": 1062.20331043005,
+              "p75": 1094.1009689122438
+            }
+          },
+          "StrategyList": {
+            "module": "deepmerge.strategy.core",
+            "class": "StrategyList",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 9601088,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 96.01088
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                566.9311992824078,
+                559.8346516489983,
+                557.925458997488,
+                561.9229935109615,
+                556.9498427212238
+              ],
+              "median_ns": 559.8346516489983,
+              "p25": 557.4376508593559,
+              "p75": 564.4270963966846
+            }
+          }
+        },
+        "1000000": {
+          "Merger": {
+            "module": "deepmerge.merger",
+            "class": "Merger",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 368454784,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 368.454784
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1063.3905418217182,
+                1067.3489607870579,
+                1070.0338333845139,
+                1075.2908885478973,
+                1096.4985564351082
+              ],
+              "median_ns": 1070.0338333845139,
+              "p25": 1065.369751304388,
+              "p75": 1085.8947224915028
+            }
+          },
+          "StrategyList": {
+            "module": "deepmerge.strategy.core",
+            "class": "StrategyList",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 96448832,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 96.448832
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                597.9286693036556,
+                595.1626412570477,
+                600.4073098301888,
+                609.4928085803986,
+                586.8259817361832
+              ],
+              "median_ns": 597.9286693036556,
+              "p25": 590.9943114966154,
+              "p75": 604.9500592052937
+            }
+          }
+        }
+      },
+      "classes": {
+        "Merger": {
+          "module": "deepmerge.merger",
+          "bytes_per_instance_1m": 368.454784,
+          "throughput_ns": 1070.0338333845139
+        },
+        "StrategyList": {
+          "module": "deepmerge.strategy.core",
+          "bytes_per_instance_1m": 96.448832,
+          "throughput_ns": 597.9286693036556
+        }
+      }
+    },
+    "parse": {
+      "scales": {
+        "10000": {
+          "Result": {
+            "module": "parse",
+            "class": "Result",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 3045240,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 304.524
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                431.22513219714165,
+                430.76345697045326,
+                431.88998475670815,
+                427.84739285707474,
+                429.4610023498535
+              ],
+              "median_ns": 430.76345697045326,
+              "p25": 428.6541976034641,
+              "p75": 431.5575584769249
+            }
+          },
+          "Match": {
+            "module": "parse",
+            "class": "Match",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 485176,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 48.5176
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                321.9747729599476,
+                320.5258585512638,
+                318.91563907265663,
+                329.38189804553986,
+                323.06283712387085
+              ],
+              "median_ns": 321.9747729599476,
+              "p25": 319.7207488119602,
+              "p75": 326.22236758470535
+            }
+          },
+          "int_convert": {
+            "module": "parse",
+            "class": "int_convert",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 405168,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 40.5168
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                307.4673190712929,
+                315.87028875947,
+                312.7480484545231,
+                335.9694965183735,
+                304.2338602244854
+              ],
+              "median_ns": 312.7480484545231,
+              "p25": 305.85058964788914,
+              "p75": 325.91989263892174
+            }
+          },
+          "convert_first": {
+            "module": "parse",
+            "class": "convert_first",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 405168,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 40.5168
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                314.3738768994808,
+                306.61290511488914,
+                308.6419031023979,
+                307.16877430677414,
+                308.7066486477852
+              ],
+              "median_ns": 308.6419031023979,
+              "p25": 306.89083971083164,
+              "p75": 311.540262773633
+            }
+          }
+        },
+        "100000": {
+          "Result": {
+            "module": "parse",
+            "class": "Result",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 30401048,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 304.01048
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                441.74470007419586,
+                440.31720608472824,
+                464.7555574774742,
+                448.9290341734886,
+                449.6072791516781
+              ],
+              "median_ns": 448.9290341734886,
+              "p25": 441.03095307946205,
+              "p75": 457.18141831457615
+            }
+          },
+          "Match": {
+            "module": "parse",
+            "class": "Match",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 4800984,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 48.00984
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                334.96398478746414,
+                320.1276995241642,
+                324.08012077212334,
+                322.8496387600899,
+                317.37493351101875
+              ],
+              "median_ns": 322.8496387600899,
+              "p25": 318.7513165175915,
+              "p75": 329.52205277979374
+            }
+          },
+          "int_convert": {
+            "module": "parse",
+            "class": "int_convert",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 4000976,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 40.00976
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                387.1490806341171,
+                328.6168724298477,
+                326.683446764946,
+                306.49809166789055,
+                314.2961487174034
+              ],
+              "median_ns": 326.683446764946,
+              "p25": 310.397120192647,
+              "p75": 357.8829765319824
+            }
+          },
+          "convert_first": {
+            "module": "parse",
+            "class": "convert_first",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 4000976,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 40.00976
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                321.2103620171547,
+                310.5402924120426,
+                308.6462989449501,
+                308.50185081362724,
+                302.8612770140171
+              ],
+              "median_ns": 308.6462989449501,
+              "p25": 305.6815639138222,
+              "p75": 315.87532721459866
+            }
+          }
+        },
+        "1000000": {
+          "Result": {
+            "module": "parse",
+            "class": "Result",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 304448792,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 304.448792
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                434.5940612256527,
+                435.7319697737694,
+                438.48196044564247,
+                434.1125302016735,
+                436.8657246232033
+              ],
+              "median_ns": 435.7319697737694,
+              "p25": 434.3532957136631,
+              "p75": 437.6738425344229
+            }
+          },
+          "Match": {
+            "module": "parse",
+            "class": "Match",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 48448728,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 48.448728
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                322.4053792655468,
+                319.4770775735378,
+                318.43213364481926,
+                320.85347920656204,
+                317.68471002578735
+              ],
+              "median_ns": 319.4770775735378,
+              "p25": 318.0584218353033,
+              "p75": 321.6294292360544
+            }
+          },
+          "int_convert": {
+            "module": "parse",
+            "class": "int_convert",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 40448720,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 40.44872
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                314.75979834795,
+                317.2278590500355,
+                311.2955205142498,
+                308.7080456316471,
+                305.5863827466965
+              ],
+              "median_ns": 311.2955205142498,
+              "p25": 307.1472141891718,
+              "p75": 315.99382869899273
+            }
+          },
+          "convert_first": {
+            "module": "parse",
+            "class": "convert_first",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 40448720,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 40.44872
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                304.3023869395256,
+                304.9157001078129,
+                306.88703060150146,
+                309.42799523472786,
+                305.7608939707279
+              ],
+              "median_ns": 305.7608939707279,
+              "p25": 304.60904352366924,
+              "p75": 308.15751291811466
+            }
+          }
+        }
+      },
+      "classes": {
+        "Match": {
+          "module": "parse",
+          "bytes_per_instance_1m": 48.448728,
+          "throughput_ns": 319.4770775735378
+        },
+        "Result": {
+          "module": "parse",
+          "bytes_per_instance_1m": 304.448792,
+          "throughput_ns": 435.7319697737694
+        },
+        "convert_first": {
+          "module": "parse",
+          "bytes_per_instance_1m": 40.44872,
+          "throughput_ns": 305.7608939707279
+        },
+        "int_convert": {
+          "module": "parse",
+          "bytes_per_instance_1m": 40.44872,
+          "throughput_ns": 311.2955205142498
+        }
+      }
+    },
+    "voluptuous": {
+      "scales": {
+        "10000": {
+          "Schema": {
+            "module": "voluptuous.schema_builder",
+            "class": "Schema",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 3129144,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 312.9144
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1786.3910645246506,
+                1784.5229431986809,
+                1784.914880990982,
+                1800.5131743848324,
+                1815.1166662573814
+              ],
+              "median_ns": 1786.3910645246506,
+              "p25": 1784.7189120948315,
+              "p75": 1807.814920321107
+            }
+          },
+          "Msg": {
+            "module": "voluptuous.schema_builder",
+            "class": "Msg",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 3765496,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 376.5496
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1975.4367321729658,
+                1981.3334196805954,
+                1996.5594448149207,
+                1992.4845919013023,
+                1986.4352233707905
+              ],
+              "median_ns": 1986.4352233707905,
+              "p25": 1978.3850759267807,
+              "p75": 1994.5220183581114
+            }
+          },
+          "Range": {
+            "module": "voluptuous.validators",
+            "class": "Range",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 725360,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 72.536
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                481.40155151486397,
+                482.91040584445005,
+                488.47628757357603,
+                545.8544939756393,
+                485.0392229855061
+              ],
+              "median_ns": 485.0392229855061,
+              "p25": 482.155978679657,
+              "p75": 517.1653907746077
+            }
+          },
+          "Coerce": {
+            "module": "voluptuous.validators",
+            "class": "Coerce",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 1005168,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 100.5168
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                419.04017329216003,
+                408.11801329255104,
+                430.29172345995903,
+                405.0426743924618,
+                402.6429355144501
+              ],
+              "median_ns": 408.11801329255104,
+              "p25": 403.8428049534559,
+              "p75": 424.66594837605953
+            }
+          },
+          "DefaultTo": {
+            "module": "voluptuous.util",
+            "class": "DefaultTo",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 2965168,
+              "spine_bytes": 80056,
+              "bytes_per_instance": 296.5168
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                515.1878856122494,
+                521.4071646332741,
+                529.1969887912273,
+                524.3274569511414,
+                518.9757980406284
+              ],
+              "median_ns": 521.4071646332741,
+              "p25": 517.0818418264389,
+              "p75": 526.7622228711843
+            }
+          },
+          "Replace": {
+            "module": "voluptuous.validators",
+            "class": "Replace",
+            "memory": {
+              "n": 10000,
+              "total_bytes": 566256,
+              "spine_bytes": 80000,
+              "bytes_per_instance": 56.6256
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                681.4497709274292,
+                692.411158233881,
+                689.6531768143177,
+                696.057602763176,
+                678.5144284367561
+              ],
+              "median_ns": 689.6531768143177,
+              "p25": 679.9820996820927,
+              "p75": 694.2343804985285
+            }
+          }
+        },
+        "100000": {
+          "Schema": {
+            "module": "voluptuous.schema_builder",
+            "class": "Schema",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 31204952,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 312.04952
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1793.2213097810745,
+                1808.575913310051,
+                1814.235169440508,
+                1817.4079433083534,
+                1812.8199130296707
+              ],
+              "median_ns": 1812.8199130296707,
+              "p25": 1800.8986115455627,
+              "p75": 1815.8215563744307
+            }
+          },
+          "Msg": {
+            "module": "voluptuous.schema_builder",
+            "class": "Msg",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 37601304,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 376.01304
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                2041.5530167520046,
+                2042.3272624611857,
+                2058.0764673650265,
+                2057.8680746257305,
+                2067.001834511757
+              ],
+              "median_ns": 2057.8680746257305,
+              "p25": 2041.940139606595,
+              "p75": 2062.5391509383917
+            }
+          },
+          "Range": {
+            "module": "voluptuous.validators",
+            "class": "Range",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 7201168,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 72.01168
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                476.7025075852871,
+                478.89947891235346,
+                469.98731791973114,
+                469.97107565402985,
+                480.30512407422066
+              ],
+              "median_ns": 476.7025075852871,
+              "p25": 469.9791967868805,
+              "p75": 479.6023014932871
+            }
+          },
+          "Coerce": {
+            "module": "voluptuous.validators",
+            "class": "Coerce",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 10000976,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 100.00976
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                400.0839591026306,
+                403.36430072784424,
+                401.2663662433624,
+                408.64283218979836,
+                405.3444415330887
+              ],
+              "median_ns": 403.36430072784424,
+              "p25": 400.6751626729965,
+              "p75": 406.9936368614435
+            }
+          },
+          "DefaultTo": {
+            "module": "voluptuous.util",
+            "class": "DefaultTo",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 29600976,
+              "spine_bytes": 800056,
+              "bytes_per_instance": 296.00976
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                516.5706761181355,
+                527.7717299759388,
+                525.9092152118683,
+                525.8707329630852,
+                525.6866291165352
+              ],
+              "median_ns": 525.8707329630852,
+              "p25": 521.1286526173353,
+              "p75": 526.8404725939035
+            }
+          },
+          "Replace": {
+            "module": "voluptuous.validators",
+            "class": "Replace",
+            "memory": {
+              "n": 100000,
+              "total_bytes": 5602064,
+              "spine_bytes": 800000,
+              "bytes_per_instance": 56.02064
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                669.2424044013023,
+                685.8959048986435,
+                687.9124790430069,
+                682.8892603516579,
+                675.4296645522118
+              ],
+              "median_ns": 682.8892603516579,
+              "p25": 672.336034476757,
+              "p75": 686.9041919708252
+            }
+          }
+        },
+        "1000000": {
+          "Schema": {
+            "module": "voluptuous.schema_builder",
+            "class": "Schema",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 312452696,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 312.452696
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                1769.3859338760376,
+                1797.8600412607193,
+                1771.1063474416733,
+                1779.6956934034824,
+                1789.3153801560402
+              ],
+              "median_ns": 1779.6956934034824,
+              "p25": 1770.2461406588554,
+              "p75": 1793.5877107083797
+            }
+          },
+          "Msg": {
+            "module": "voluptuous.schema_builder",
+            "class": "Msg",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 376449048,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 376.449048
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                2038.7808606028557,
+                2036.834191530943,
+                2067.601438611746,
+                2080.084700137377,
+                2066.0499297082424
+              ],
+              "median_ns": 2066.0499297082424,
+              "p25": 2037.8075260668993,
+              "p75": 2073.8430693745613
+            }
+          },
+          "Range": {
+            "module": "voluptuous.validators",
+            "class": "Range",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 72448912,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 72.448912
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                479.9292795360089,
+                478.2715626060962,
+                479.20951619744295,
+                474.8278670012951,
+                477.45762392878527
+              ],
+              "median_ns": 478.2715626060962,
+              "p25": 476.1427454650402,
+              "p75": 479.5693978667259
+            }
+          },
+          "Coerce": {
+            "module": "voluptuous.validators",
+            "class": "Coerce",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 100448720,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 100.44872
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                400.9936936199665,
+                399.06948804855347,
+                402.00820192694664,
+                403.63987907767296,
+                410.44486686587334
+              ],
+              "median_ns": 402.00820192694664,
+              "p25": 400.03159083426,
+              "p75": 407.04237297177315
+            }
+          },
+          "DefaultTo": {
+            "module": "voluptuous.util",
+            "class": "DefaultTo",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 296448720,
+              "spine_bytes": 8000056,
+              "bytes_per_instance": 296.44872
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                525.2071470022202,
+                525.2442136406898,
+                524.3331380188465,
+                524.0654200315475,
+                523.6945115029812
+              ],
+              "median_ns": 524.3331380188465,
+              "p25": 523.8799657672644,
+              "p75": 525.225680321455
+            }
+          },
+          "Replace": {
+            "module": "voluptuous.validators",
+            "class": "Replace",
+            "memory": {
+              "n": 1000000,
+              "total_bytes": 56449808,
+              "spine_bytes": 8000000,
+              "bytes_per_instance": 56.449808
+            },
+            "throughput": {
+              "n": 50000,
+              "samples_ns": [
+                669.2737713456154,
+                681.434627622366,
+                679.792333394289,
+                678.922887891531,
+                677.1409511566162
+              ],
+              "median_ns": 678.922887891531,
+              "p25": 673.2073612511158,
+              "p75": 680.6134805083275
+            }
+          }
+        }
+      },
+      "classes": {
+        "Coerce": {
+          "module": "voluptuous.validators",
+          "bytes_per_instance_1m": 100.44872,
+          "throughput_ns": 402.00820192694664
+        },
+        "DefaultTo": {
+          "module": "voluptuous.util",
+          "bytes_per_instance_1m": 296.44872,
+          "throughput_ns": 524.3331380188465
+        },
+        "Msg": {
+          "module": "voluptuous.schema_builder",
+          "bytes_per_instance_1m": 376.449048,
+          "throughput_ns": 2066.0499297082424
+        },
+        "Range": {
+          "module": "voluptuous.validators",
+          "bytes_per_instance_1m": 72.448912,
+          "throughput_ns": 478.2715626060962
+        },
+        "Replace": {
+          "module": "voluptuous.validators",
+          "bytes_per_instance_1m": 56.449808,
+          "throughput_ns": 678.922887891531
+        },
+        "Schema": {
+          "module": "voluptuous.schema_builder",
+          "bytes_per_instance_1m": 312.452696,
+          "throughput_ns": 1779.6956934034824
+        }
+      }
+    }
+  },
+  "summary": {
+    "libs": {},
+    "all_classes": {
+      "deepmerge.Merger": {
+        "lib": "deepmerge",
+        "class": "Merger",
+        "baseline_bytes": 400.456696,
+        "optimized_bytes": 368.454784,
+        "saved_pct": 7.99135395153937,
+        "baseline_ns": 1087.034996598959,
+        "optimized_ns": 1070.0338333845139,
+        "throughput_ratio": 1.0158884351915027
+      },
+      "deepmerge.StrategyList": {
+        "lib": "deepmerge",
+        "class": "StrategyList",
+        "baseline_bytes": 128.452216,
+        "optimized_bytes": 96.448832,
+        "saved_pct": 24.914621947822212,
+        "baseline_ns": 598.7021140754223,
+        "optimized_ns": 597.9286693036556,
+        "throughput_ratio": 1.0012935402021572
+      },
+      "parse.Match": {
+        "lib": "parse",
+        "class": "Match",
+        "baseline_bytes": 80.451896,
+        "optimized_bytes": 48.448728,
+        "saved_pct": 39.779258900250156,
+        "baseline_ns": 353.0333563685417,
+        "optimized_ns": 319.4770775735378,
+        "throughput_ratio": 1.1050350123704253
+      },
+      "parse.Result": {
+        "lib": "parse",
+        "class": "Result",
+        "baseline_bytes": 336.451752,
+        "optimized_bytes": 304.448792,
+        "saved_pct": 9.511901724322113,
+        "baseline_ns": 475.9455658495426,
+        "optimized_ns": 435.7319697737694,
+        "throughput_ratio": 1.0922897534845837
+      },
+      "parse.convert_first": {
+        "lib": "parse",
+        "class": "convert_first",
+        "baseline_bytes": 72.452104,
+        "optimized_bytes": 40.44872,
+        "saved_pct": 44.17178002173685,
+        "baseline_ns": 338.3411467075348,
+        "optimized_ns": 305.7608939707279,
+        "throughput_ratio": 1.1065546751702195
+      },
+      "parse.int_convert": {
+        "lib": "parse",
+        "class": "int_convert",
+        "baseline_bytes": 72.452104,
+        "optimized_bytes": 40.44872,
+        "saved_pct": 44.17178002173685,
+        "baseline_ns": 335.6482647359371,
+        "optimized_ns": 311.2955205142498,
+        "throughput_ratio": 1.0782303072702666
+      },
+      "voluptuous.Coerce": {
+        "lib": "voluptuous",
+        "class": "Coerce",
+        "baseline_bytes": 132.45168,
+        "optimized_bytes": 100.44872,
+        "saved_pct": 24.16198873430674,
+        "baseline_ns": 435.87004765868187,
+        "optimized_ns": 402.00820192694664,
+        "throughput_ratio": 1.0842317285304757
+      },
+      "voluptuous.DefaultTo": {
+        "lib": "voluptuous",
+        "class": "DefaultTo",
+        "baseline_bytes": 328.451888,
+        "optimized_bytes": 296.44872,
+        "saved_pct": 9.743639531157156,
+        "baseline_ns": 569.6751363575459,
+        "optimized_ns": 524.3331380188465,
+        "throughput_ratio": 1.0864755535193154
+      },
+      "voluptuous.Msg": {
+        "lib": "voluptuous",
+        "class": "Msg",
+        "baseline_bytes": 440.451808,
+        "optimized_bytes": 376.449048,
+        "saved_pct": 14.531160693975409,
+        "baseline_ns": 2096.04449570179,
+        "optimized_ns": 2066.0499297082424,
+        "throughput_ratio": 1.014517832101852
+      },
+      "voluptuous.Range": {
+        "lib": "voluptuous",
+        "class": "Range",
+        "baseline_bytes": 104.45148,
+        "optimized_bytes": 72.448912,
+        "saved_pct": 30.638692721252003,
+        "baseline_ns": 512.7810128033161,
+        "optimized_ns": 478.2715626060962,
+        "throughput_ratio": 1.0721545098963825
+      },
+      "voluptuous.Replace": {
+        "lib": "voluptuous",
+        "class": "Replace",
+        "baseline_bytes": 88.452768,
+        "optimized_bytes": 56.449808,
+        "saved_pct": 36.18084625684072,
+        "baseline_ns": 748.839732259512,
+        "optimized_ns": 678.922887891531,
+        "throughput_ratio": 1.1029820110868782
+      },
+      "voluptuous.Schema": {
+        "lib": "voluptuous",
+        "class": "Schema",
+        "baseline_bytes": 344.455456,
+        "optimized_bytes": 312.452696,
+        "saved_pct": 9.29082685222441,
+        "baseline_ns": 1946.4703649282455,
+        "optimized_ns": 1779.6956934034824,
+        "throughput_ratio": 1.0937096561748845
+      }
+    },
+    "median_saved_pct": 24.538305341064476,
+    "min_saved_pct": 7.99135395153937,
+    "max_saved_pct": 44.17178002173685,
+    "median_throughput_ratio": 1.0853536410248954,
+    "min_throughput_ratio": 1.0012935402021572
+  }
+}

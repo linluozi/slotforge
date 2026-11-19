@@ -1,0 +1,34 @@
+--- a/merger.py
++++ b/merger.py
+@@ -14,6 +14,14 @@
+     :param type_strategies, List[Tuple]: a list of (Type, Strategy) pairs
+            that should be used against incoming types. For example: (dict, "override").
+     """
++    __slots__ = ('_fallback_strategy', '_type_conflict_strategy', '_type_strategies',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     PROVIDED_TYPE_STRATEGIES: dict[type, type[s.StrategyList]] = {
+         list: s.ListStrategies,
+--- a/strategy/core.py
++++ b/strategy/core.py
+@@ -19,6 +19,14 @@
+ 
+ 
+ class StrategyList:
++    __slots__ = ('_strategies',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+     NAME: str
+ 
+     def __init__(self, strategy_list: StrategyListInitable) -> None:

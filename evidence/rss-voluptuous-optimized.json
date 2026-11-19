@@ -1,0 +1,10 @@
+{
+  "lib": "voluptuous",
+  "class": "Schema",
+  "n": 1000000,
+  "rss_before_kb": 15872,
+  "rss_after_kb": 337664,
+  "delta_mb": 314.25,
+  "live": 1000000,
+  "has_dict": false
+}

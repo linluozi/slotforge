@@ -1,0 +1,130 @@
+{
+  "libs": {},
+  "all_classes": {
+    "deepmerge.Merger": {
+      "lib": "deepmerge",
+      "class": "Merger",
+      "baseline_bytes": 400.456696,
+      "optimized_bytes": 368.454784,
+      "saved_pct": 7.99135395153937,
+      "baseline_ns": 1087.034996598959,
+      "optimized_ns": 1070.0338333845139,
+      "throughput_ratio": 1.0158884351915027
+    },
+    "deepmerge.StrategyList": {
+      "lib": "deepmerge",
+      "class": "StrategyList",
+      "baseline_bytes": 128.452216,
+      "optimized_bytes": 96.448832,
+      "saved_pct": 24.914621947822212,
+      "baseline_ns": 598.7021140754223,
+      "optimized_ns": 597.9286693036556,
+      "throughput_ratio": 1.0012935402021572
+    },
+    "parse.Match": {
+      "lib": "parse",
+      "class": "Match",
+      "baseline_bytes": 80.451896,
+      "optimized_bytes": 48.448728,
+      "saved_pct": 39.779258900250156,
+      "baseline_ns": 353.0333563685417,
+      "optimized_ns": 319.4770775735378,
+      "throughput_ratio": 1.1050350123704253
+    },
+    "parse.Result": {
+      "lib": "parse",
+      "class": "Result",
+      "baseline_bytes": 336.451752,
+      "optimized_bytes": 304.448792,
+      "saved_pct": 9.511901724322113,
+      "baseline_ns": 475.9455658495426,
+      "optimized_ns": 435.7319697737694,
+      "throughput_ratio": 1.0922897534845837
+    },
+    "parse.convert_first": {
+      "lib": "parse",
+      "class": "convert_first",
+      "baseline_bytes": 72.452104,
+      "optimized_bytes": 40.44872,
+      "saved_pct": 44.17178002173685,
+      "baseline_ns": 338.3411467075348,
+      "optimized_ns": 305.7608939707279,
+      "throughput_ratio": 1.1065546751702195
+    },
+    "parse.int_convert": {
+      "lib": "parse",
+      "class": "int_convert",
+      "baseline_bytes": 72.452104,
+      "optimized_bytes": 40.44872,
+      "saved_pct": 44.17178002173685,
+      "baseline_ns": 335.6482647359371,
+      "optimized_ns": 311.2955205142498,
+      "throughput_ratio": 1.0782303072702666
+    },
+    "voluptuous.Coerce": {
+      "lib": "voluptuous",
+      "class": "Coerce",
+      "baseline_bytes": 132.45168,
+      "optimized_bytes": 100.44872,
+      "saved_pct": 24.16198873430674,
+      "baseline_ns": 435.87004765868187,
+      "optimized_ns": 402.00820192694664,
+      "throughput_ratio": 1.0842317285304757
+    },
+    "voluptuous.DefaultTo": {
+      "lib": "voluptuous",
+      "class": "DefaultTo",
+      "baseline_bytes": 328.451888,
+      "optimized_bytes": 296.44872,
+      "saved_pct": 9.743639531157156,
+      "baseline_ns": 569.6751363575459,
+      "optimized_ns": 524.3331380188465,
+      "throughput_ratio": 1.0864755535193154
+    },
+    "voluptuous.Msg": {
+      "lib": "voluptuous",
+      "class": "Msg",
+      "baseline_bytes": 440.451808,
+      "optimized_bytes": 376.449048,
+      "saved_pct": 14.531160693975409,
+      "baseline_ns": 2096.04449570179,
+      "optimized_ns": 2066.0499297082424,
+      "throughput_ratio": 1.014517832101852
+    },
+    "voluptuous.Range": {
+      "lib": "voluptuous",
+      "class": "Range",
+      "baseline_bytes": 104.45148,
+      "optimized_bytes": 72.448912,
+      "saved_pct": 30.638692721252003,
+      "baseline_ns": 512.7810128033161,
+      "optimized_ns": 478.2715626060962,
+      "throughput_ratio": 1.0721545098963825
+    },
+    "voluptuous.Replace": {
+      "lib": "voluptuous",
+      "class": "Replace",
+      "baseline_bytes": 88.452768,
+      "optimized_bytes": 56.449808,
+      "saved_pct": 36.18084625684072,
+      "baseline_ns": 748.839732259512,
+      "optimized_ns": 678.922887891531,
+      "throughput_ratio": 1.1029820110868782
+    },
+    "voluptuous.Schema": {
+      "lib": "voluptuous",
+      "class": "Schema",
+      "baseline_bytes": 344.455456,
+      "optimized_bytes": 312.452696,
+      "saved_pct": 9.29082685222441,
+      "baseline_ns": 1946.4703649282455,
+      "optimized_ns": 1779.6956934034824,
+      "throughput_ratio": 1.0937096561748845
+    }
+  },
+  "median_saved_pct": 24.538305341064476,
+  "min_saved_pct": 7.99135395153937,
+  "max_saved_pct": 44.17178002173685,
+  "median_throughput_ratio": 1.0853536410248954,
+  "min_throughput_ratio": 1.0012935402021572
+}

@@ -1,0 +1,10 @@
+{
+  "lib": "voluptuous",
+  "class": "Range",
+  "n": 1000000,
+  "rss_before_kb": 16128,
+  "rss_after_kb": 133760,
+  "delta_mb": 114.875,
+  "live": 1000000,
+  "has_dict": true
+}

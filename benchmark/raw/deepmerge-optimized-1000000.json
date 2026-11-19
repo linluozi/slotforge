@@ -1,0 +1,57 @@
+{
+  "impl": "optimized",
+  "lib": "deepmerge",
+  "root": "/tmp/sf/opt/deepmerge-src",
+  "n": 1000000,
+  "python": "3.12.3",
+  "started_at": "2026-11-19T10:21:59",
+  "classes": {
+    "Merger": {
+      "module": "deepmerge.merger",
+      "class": "Merger",
+      "memory": {
+        "n": 1000000,
+        "total_bytes": 368454784,
+        "spine_bytes": 8000000,
+        "bytes_per_instance": 368.454784
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          1063.3905418217182,
+          1067.3489607870579,
+          1070.0338333845139,
+          1075.2908885478973,
+          1096.4985564351082
+        ],
+        "median_ns": 1070.0338333845139,
+        "p25": 1065.369751304388,
+        "p75": 1085.8947224915028
+      }
+    },
+    "StrategyList": {
+      "module": "deepmerge.strategy.core",
+      "class": "StrategyList",
+      "memory": {
+        "n": 1000000,
+        "total_bytes": 96448832,
+        "spine_bytes": 8000000,
+        "bytes_per_instance": 96.448832
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          597.9286693036556,
+          595.1626412570477,
+          600.4073098301888,
+          609.4928085803986,
+          586.8259817361832
+        ],
+        "median_ns": 597.9286693036556,
+        "p25": 590.9943114966154,
+        "p75": 604.9500592052937
+      }
+    }
+  },
+  "elapsed_s": 11.697
+}

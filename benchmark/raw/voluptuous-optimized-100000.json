@@ -1,0 +1,149 @@
+{
+  "impl": "optimized",
+  "lib": "voluptuous",
+  "root": "/tmp/sf/opt/voluptuous-src",
+  "n": 100000,
+  "python": "3.12.3",
+  "started_at": "2026-11-19T10:20:05",
+  "classes": {
+    "Schema": {
+      "module": "voluptuous.schema_builder",
+      "class": "Schema",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 31204952,
+        "spine_bytes": 800000,
+        "bytes_per_instance": 312.04952
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          1793.2213097810745,
+          1808.575913310051,
+          1814.235169440508,
+          1817.4079433083534,
+          1812.8199130296707
+        ],
+        "median_ns": 1812.8199130296707,
+        "p25": 1800.8986115455627,
+        "p75": 1815.8215563744307
+      }
+    },
+    "Msg": {
+      "module": "voluptuous.schema_builder",
+      "class": "Msg",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 37601304,
+        "spine_bytes": 800000,
+        "bytes_per_instance": 376.01304
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          2041.5530167520046,
+          2042.3272624611857,
+          2058.0764673650265,
+          2057.8680746257305,
+          2067.001834511757
+        ],
+        "median_ns": 2057.8680746257305,
+        "p25": 2041.940139606595,
+        "p75": 2062.5391509383917
+      }
+    },
+    "Range": {
+      "module": "voluptuous.validators",
+      "class": "Range",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 7201168,
+        "spine_bytes": 800056,
+        "bytes_per_instance": 72.01168
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          476.7025075852871,
+          478.89947891235346,
+          469.98731791973114,
+          469.97107565402985,
+          480.30512407422066
+        ],
+        "median_ns": 476.7025075852871,
+        "p25": 469.9791967868805,
+        "p75": 479.6023014932871
+      }
+    },
+    "Coerce": {
+      "module": "voluptuous.validators",
+      "class": "Coerce",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 10000976,
+        "spine_bytes": 800056,
+        "bytes_per_instance": 100.00976
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          400.0839591026306,
+          403.36430072784424,
+          401.2663662433624,
+          408.64283218979836,
+          405.3444415330887
+        ],
+        "median_ns": 403.36430072784424,
+        "p25": 400.6751626729965,
+        "p75": 406.9936368614435
+      }
+    },
+    "DefaultTo": {
+      "module": "voluptuous.util",
+      "class": "DefaultTo",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 29600976,
+        "spine_bytes": 800056,
+        "bytes_per_instance": 296.00976
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          516.5706761181355,
+          527.7717299759388,
+          525.9092152118683,
+          525.8707329630852,
+          525.6866291165352
+        ],
+        "median_ns": 525.8707329630852,
+        "p25": 521.1286526173353,
+        "p75": 526.8404725939035
+      }
+    },
+    "Replace": {
+      "module": "voluptuous.validators",
+      "class": "Replace",
+      "memory": {
+        "n": 100000,
+        "total_bytes": 5602064,
+        "spine_bytes": 800000,
+        "bytes_per_instance": 56.02064
+      },
+      "throughput": {
+        "n": 50000,
+        "samples_ns": [
+          669.2424044013023,
+          685.8959048986435,
+          687.9124790430069,
+          682.8892603516579,
+          675.4296645522118
+        ],
+        "median_ns": 682.8892603516579,
+        "p25": 672.336034476757,
+        "p75": 686.9041919708252
+      }
+    }
+  },
+  "elapsed_s": 5.466
+}

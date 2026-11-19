@@ -1,0 +1,10 @@
+{
+  "lib": "parse",
+  "class": "int_convert",
+  "n": 1000000,
+  "rss_before_kb": 14720,
+  "rss_after_kb": 100992,
+  "delta_mb": 84.25,
+  "live": 1000000,
+  "has_dict": true
+}

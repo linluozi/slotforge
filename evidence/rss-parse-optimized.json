@@ -1,0 +1,10 @@
+{
+  "lib": "parse",
+  "class": "Result",
+  "n": 1000000,
+  "rss_before_kb": 14720,
+  "rss_after_kb": 352384,
+  "delta_mb": 329.75,
+  "live": 1000000,
+  "has_dict": false
+}

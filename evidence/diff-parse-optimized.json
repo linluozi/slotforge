@@ -1,0 +1,56 @@
+{
+  "impl": "optimized",
+  "lib": "parse",
+  "samples_per_class": 2000,
+  "classes": {
+    "Result": {
+      "state_sha256": "8594eccadb2a050ff11790222d91e2b345bafcb90112fda6657cc4ba2a51dd24",
+      "independent_states": 2000,
+      "pickle_ok": 2000,
+      "pickle_fail": 0,
+      "deepcopy_ok": 2000,
+      "deepcopy_fail": 0,
+      "pickle_samples_b64": [
+        "gAWVUAAAAAAAAACMBXBhcnNllIwGUmVzdWx0lJOUKYGUfZQojAVmaXhlZJSMAmEwlEsAhpSMBW5hbWVklH2UjAJuMJRLAHOMBXNwYW5zlF2USwBLAYaUYXViLg==",
+        "gAWVUAAAAAAAAACMBXBhcnNllIwGUmVzdWx0lJOUKYGUfZQojAVmaXhlZJSMAmExlEsBhpSMBW5hbWVklH2UjAJuMZRLAXOMBXNwYW5zlF2USwBLAoaUYXViLg==",
+        "gAWVUAAAAAAAAACMBXBhcnNllIwGUmVzdWx0lJOUKYGUfZQojAVmaXhlZJSMAmEylEsChpSMBW5hbWVklH2UjAJuMpRLAnOMBXNwYW5zlF2USwBLA4aUYXViLg=="
+      ]
+    },
+    "Match": {
+      "state_sha256": "3d2cc6a36babfc14ce85292f003587849dfc5935d3fce7e4562c4d836eab0805",
+      "independent_states": 2000,
+      "pickle_ok": 0,
+      "pickle_fail": 2000,
+      "deepcopy_ok": 2000,
+      "deepcopy_fail": 0,
+      "pickle_samples_b64": []
+    },
+    "int_convert": {
+      "state_sha256": "40518968fef43b4f30ce8a5facfd3ecf6fe8aa785142133637f11030c7677531",
+      "independent_states": 30,
+      "pickle_ok": 2000,
+      "pickle_fail": 0,
+      "deepcopy_ok": 2000,
+      "deepcopy_fail": 0,
+      "pickle_samples_b64": [
+        "gAWVKQAAAAAAAACMBXBhcnNllIwLaW50X2NvbnZlcnSUk5QpgZR9lIwEYmFzZZRLAnNiLg==",
+        "gAWVKQAAAAAAAACMBXBhcnNllIwLaW50X2NvbnZlcnSUk5QpgZR9lIwEYmFzZZRLA3NiLg==",
+        "gAWVKQAAAAAAAACMBXBhcnNllIwLaW50X2NvbnZlcnSUk5QpgZR9lIwEYmFzZZRLBHNiLg=="
+      ]
+    },
+    "convert_first": {
+      "state_sha256": "0d3163de9534d0c83b18c81f679975dd662607cd32d4e413b5224147885a1ff4",
+      "independent_states": 2,
+      "pickle_ok": 2000,
+      "pickle_fail": 0,
+      "deepcopy_ok": 2000,
+      "deepcopy_fail": 0,
+      "pickle_samples_b64": [
+        "gAWVQQAAAAAAAACMBXBhcnNllIwNY29udmVydF9maXJzdJSTlCmBlH2UjAljb252ZXJ0ZXKUjAhidWlsdGluc5SMA3N0cpSTlHNiLg==",
+        "gAWVQQAAAAAAAACMBXBhcnNllIwNY29udmVydF9maXJzdJSTlCmBlH2UjAljb252ZXJ0ZXKUjAhidWlsdGluc5SMA2ludJSTlHNiLg==",
+        "gAWVQQAAAAAAAACMBXBhcnNllIwNY29udmVydF9maXJzdJSTlCmBlH2UjAljb252ZXJ0ZXKUjAhidWlsdGluc5SMA3N0cpSTlHNiLg=="
+      ]
+    }
+  },
+  "state_sha256": "964dd2499ddf60600dd5bf6ba6190adcf57ce6db54fa39acc432ea4d26b42a9d"
+}

@@ -1,0 +1,10 @@
+{
+  "lib": "voluptuous",
+  "class": "Coerce",
+  "n": 1000000,
+  "rss_before_kb": 16000,
+  "rss_after_kb": 165120,
+  "delta_mb": 145.625,
+  "live": 1000000,
+  "has_dict": true
+}
