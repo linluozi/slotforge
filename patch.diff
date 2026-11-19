@@ -1,0 +1,192 @@
+--- a/voluptuous/schema_builder.py
++++ b/voluptuous/schema_builder.py
+@@ -106,6 +106,14 @@
+             >>> assert v != v2
+ 
+     """
++    __slots__ = ('_compiled', 'extra', 'required', 'schema',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     _extra_to_name = {
+         REMOVE_EXTRA: 'REMOVE_EXTRA',
+@@ -989,6 +997,14 @@
+     ... except er.MultipleInvalid as e:
+     ...   assert isinstance(e.errors[0], er.RangeInvalid)
+     """
++    __slots__ = ('_schema', 'cls', 'msg', 'schema',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+--- a/voluptuous/util.py
++++ b/voluptuous/util.py
+@@ -73,6 +73,14 @@
+     >>> s(None)
+     []
+     """
++    __slots__ = ('default_value', 'msg',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(self, default_value, msg: typing.Optional[str] = None) -> None:
+         self.default_value = default_factory(default_value)
+--- a/voluptuous/validators.py
++++ b/voluptuous/validators.py
+@@ -131,6 +131,14 @@
+         >>> with raises(MultipleInvalid, 'moo'):
+         ...   validate('foo')
+     """
++    __slots__ = ('msg', 'type', 'type_name',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+@@ -460,6 +468,14 @@
+     >>> validate('you say hello')
+     'I say goodbye'
+     """
++    __slots__ = ('msg', 'pattern', 'substitution',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+@@ -653,6 +669,14 @@
+     >>> with raises(MultipleInvalid, 'value must be lower than 10'):
+     ...   Schema(Range(max=10, max_included=False))(20)
+     """
++    __slots__ = ('max', 'max_included', 'min', 'min_included', 'msg',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(
+         self,
+--- a/parse/__init__.py
++++ b/parse/__init__.py
+@@ -61,6 +61,14 @@
+ 
+     It may also have other non-numeric characters that we can ignore.
+     """
++    __slots__ = ('base',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     CHARS = "0123456789abcdefghijklmnopqrstuvwxyz"
+ 
+@@ -102,6 +110,14 @@
+     """Convert the first element of a pair.
+     This equivalent to lambda s,m: converter(s). But unlike a lambda function, it can be pickled
+     """
++    __slots__ = ('converter',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(self, converter):
+         self.converter = converter
+@@ -913,6 +929,14 @@
+ 
+     Named results may be tested for existence using `'name' in result`.
+     """
++    __slots__ = ('fixed', 'named', 'spans',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(self, fixed, named, spans):
+         self.fixed = fixed
+@@ -937,6 +961,14 @@
+     This class is only used to expose internal used regex match objects
+     to the user and use them for external Parser.evaluate_result calls.
+     """
++    __slots__ = ('match', 'parser',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     def __init__(self, parser, match):
+         self.parser = parser
+--- a/deepmerge/merger.py
++++ b/deepmerge/merger.py
+@@ -14,6 +14,14 @@
+     :param type_strategies, List[Tuple]: a list of (Type, Strategy) pairs
+            that should be used against incoming types. For example: (dict, "override").
+     """
++    __slots__ = ('_fallback_strategy', '_type_conflict_strategy', '_type_strategies',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+ 
+     PROVIDED_TYPE_STRATEGIES: dict[type, type[s.StrategyList]] = {
+         list: s.ListStrategies,
+--- a/deepmerge/strategy/core.py
++++ b/deepmerge/strategy/core.py
+@@ -19,6 +19,14 @@
+ 
+ 
+ class StrategyList:
++    __slots__ = ('_strategies',)
++
++    def __getstate__(self):
++        return {name: getattr(self, name) for name in self.__slots__}
++
++    def __setstate__(self, state):
++        for name, value in state.items():
++            setattr(self, name, value)
+     NAME: str
+ 
+     def __init__(self, strategy_list: StrategyListInitable) -> None:

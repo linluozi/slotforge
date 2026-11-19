@@ -33,6 +33,13 @@ pristine tree; the patch only inserts lines (no upstream line is edited).
 | [r1chardj0n3s/parse](https://github.com/r1chardj0n3s/parse) | `23ee37e87fced1d59d9e12d75cc6d934ed89b72e` | MIT | Result, Match, int_convert, convert_first | `patches/parse.patch` (32+ / 0−) | 184 passed, 1 skipped |
 | [toumorokoshi/deepmerge](https://github.com/toumorokoshi/deepmerge) | `5be8369aa91213c67aa241e4fba7e5a41b29da22` | MIT | Merger, StrategyList | `patches/deepmerge.patch` (16+ / 0−) | 45 passed |
 
+`patch.diff` at the repository root is the concatenation of the three files.
+Apply one upstream's part with a path filter from that upstream's clone root:
+
+```bash
+git apply --check --include='parse/*' patch.diff
+```
+
 The pickle shims are part of the generated patch: without them CPython 3.12
 refuses to pickle a class that defines `__slots__` but not `__getstate__`
 (`copyreg` raises `TypeError`). The shim returns a plain dict, so a pickle
