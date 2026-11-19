@@ -10,11 +10,11 @@ newline context that `diff` reports.
 | `parse.patch` | https://github.com/r1chardj0n3s/parse | 23ee37e87fced1d59d9e12d75cc6d934ed89b72e | MIT | 32 added, 0 removed |
 | `deepmerge.patch` | https://github.com/toumorokoshi/deepmerge | 5be8369aa91213c67aa241e4fba7e5a41b29da22 | MIT | 16 added, 0 removed |
 
-Apply from the package root so `a/...` / `b/...` resolve against the package
-directory:
+Apply from the upstream clone root; every patch path is prefixed with the
+package directory (`a/voluptuous/...`, `a/parse/...`, `a/deepmerge/...`):
 
 ```bash
-cd path/to/voluptuous/voluptuous && git apply --check /path/to/voluptuous.patch
+cd path/to/upstream-clone && git apply --check /path/to/voluptuous.patch
 ```
 
 Upstream copyright and license texts remain in each upstream repository; this

@@ -1,5 +1,5 @@
---- a/schema_builder.py
-+++ b/schema_builder.py
+--- a/voluptuous/schema_builder.py
++++ b/voluptuous/schema_builder.py
 @@ -106,6 +106,14 @@
              >>> assert v != v2
  
@@ -30,8 +30,8 @@
  
      def __init__(
          self,
---- a/util.py
-+++ b/util.py
+--- a/voluptuous/util.py
++++ b/voluptuous/util.py
 @@ -73,6 +73,14 @@
      >>> s(None)
      []
@@ -47,8 +47,8 @@
  
      def __init__(self, default_value, msg: typing.Optional[str] = None) -> None:
          self.default_value = default_factory(default_value)
---- a/validators.py
-+++ b/validators.py
+--- a/voluptuous/validators.py
++++ b/voluptuous/validators.py
 @@ -131,6 +131,14 @@
          >>> with raises(MultipleInvalid, 'moo'):
          ...   validate('foo')

@@ -1,5 +1,5 @@
---- a/merger.py
-+++ b/merger.py
+--- a/deepmerge/merger.py
++++ b/deepmerge/merger.py
 @@ -14,6 +14,14 @@
      :param type_strategies, List[Tuple]: a list of (Type, Strategy) pairs
             that should be used against incoming types. For example: (dict, "override").
@@ -15,8 +15,8 @@
  
      PROVIDED_TYPE_STRATEGIES: dict[type, type[s.StrategyList]] = {
          list: s.ListStrategies,
---- a/strategy/core.py
-+++ b/strategy/core.py
+--- a/deepmerge/strategy/core.py
++++ b/deepmerge/strategy/core.py
 @@ -19,6 +19,14 @@
  
  

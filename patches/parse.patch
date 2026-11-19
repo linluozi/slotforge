@@ -1,5 +1,5 @@
---- a/__init__.py
-+++ b/__init__.py
+--- a/parse/__init__.py
++++ b/parse/__init__.py
 @@ -61,6 +61,14 @@
  
      It may also have other non-numeric characters that we can ignore.
