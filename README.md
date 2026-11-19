@@ -45,6 +45,21 @@ refuses to pickle a class that defines `__slots__` but not `__getstate__`
 (`copyreg` raises `TypeError`). The shim returns a plain dict, so a pickle
 written by the old dict layout loads into the new slotted class.
 
+## Upstream history check
+
+Before shipping, each upstream was cloned with full history and searched for an
+existing change of the same kind:
+
+- **voluptuous**: `git log --since=2024-11-19 -S'__slots__' -- '*.py'` → **0
+  commits**. The only slotted class in the tree is `Marker` (added 2013, commit
+  `97b23b3`, `__slots__ = ('schema', '_schema', 'msg', 'description', '__hash__')`);
+  it is not one of the six classes patched here. Issue/PR search for
+  `__slots__` returned no same-change request.
+- **parse**: `-S'__slots__'` → **0 commits**; no issue/PR.
+- **deepmerge**: `-S'__slots__'` → **0 commits**; no issue/PR.
+
+So 3/3 patches target classes where upstream has not already applied the change.
+
 ## Memory: what actually survives
 
 Measurement is 1,000,000 live instances per class (`benchmark/bench.py`), taking
